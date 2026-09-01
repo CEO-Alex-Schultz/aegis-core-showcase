@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const terminalBody = document.querySelector("[data-terminal-body]");
 
   const LOG_LINES = [
-    { text: "zapret v2 ............ активен", cls: "ok" },
-    { text: "tgwsproxy ............ запущен", cls: "ok" },
+    // { text: "zapret v2 ............ активен", cls: "ok" },
+    // { text: "tgwsproxy ............ запущен", cls: "ok" },
     { text: "подкоп: проверка каналов", cls: "" },
     { text: "vless+reality ........ установлен", cls: "ok" },
     { text: "hysteria2 ............ туннель открыт", cls: "ok" },
