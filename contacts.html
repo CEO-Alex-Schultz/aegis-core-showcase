@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты — Aegis</title>
+<meta name="description" content="Свяжитесь с командой Aegis — Telegram, e-mail, ответы на частые вопросы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" data-header>
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <span class="header__logo-mark">⌁</span>
+      <span class="header__logo-text">Aegis</span>
+    </a>
+
+    <nav class="header__nav" data-nav>
+      <a href="index.html" class="header__nav-link">Главная</a>
+      <a href="products.html" class="header__nav-link">Товары</a>
+      <a href="about.html" class="header__nav-link">О нас</a>
+      <a href="contacts.html" class="header__nav-link header__nav-link--active">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="products.html" class="header__cta">Заказать роутер</a>
+      <button class="header__burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="header__mobile" data-mobile-nav>
+    <a href="index.html" class="header__mobile-link">Главная</a>
+    <a href="products.html" class="header__mobile-link">Товары</a>
+    <a href="about.html" class="header__mobile-link">О нас</a>
+    <a href="contacts.html" class="header__mobile-link">Контакты</a>
+    <a href="products.html" class="header__mobile-cta">Заказать роутер</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="page-hero__bg" aria-hidden="true">
+      <svg class="page-hero__grid" viewBox="0 0 1200 520" preserveAspectRatio="none">
+        <defs>
+          <pattern id="grid-contacts" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="520" fill="url(#grid-contacts)"/>
+        <path class="page-hero__pulse page-hero__pulse--1" d="M -50 350 L 340 350 L 400 270 L 760 270 L 820 190 L 1250 190"/>
+        <path class="page-hero__pulse page-hero__pulse--2" d="M -50 160 L 300 160 L 360 240 L 860 240 L 920 320 L 1250 320"/>
+      </svg>
+    </div>
+
+    <div class="page-hero__inner">
+      <p class="page-hero__eyebrow">
+        <span class="page-hero__eyebrow-dot page-hero__eyebrow-dot--online"></span>ОНЛАЙН · КОНТАКТЫ
+      </p>
+      <h1 class="page-hero__title" data-page-title>
+        <span class="page-hero__title-line">СВЯЖИТЕСЬ</span>
+        <span class="page-hero__title-line page-hero__title-line--accent">С НАМИ.</span>
+      </h1>
+      <p class="page-hero__sub">
+        Отвечаем быстро. Работаем с 10:00 до 22:00 по МСК. По техническим вопросам — всегда.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT CHANNELS ===================== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__head">
+        <p class="contact__eyebrow">КАНАЛЫ СВЯЗИ</p>
+        <h2 class="contact__title">Как с нами связаться</h2>
+        <p class="contact__lead">Выбирай удобный способ — ответим в любом.</p>
+      </div>
+
+      <div class="contact__grid">
+
+        <a href="https://t.me/<!-- ВСТАВИТЬ USERNAME -->" class="contact__card contact__card--primary">
+          <div class="contact__card-head">
+            <span class="contact__card-glyph">✈</span>
+            <span class="contact__card-badge">Быстрее всего</span>
+          </div>
+          <h3 class="contact__card-title">Telegram</h3>
+          <p class="contact__card-handle">@<!-- ВСТАВИТЬ USERNAME --></p>
+          <p class="contact__card-desc">Основной канал. Обычно отвечаем в течение часа.</p>
+          <span class="contact__card-cta">Написать →</span>
+        </a>
+
+        <a href="mailto:<!-- ВСТАВИТЬ EMAIL -->" class="contact__card">
+          <div class="contact__card-head">
+            <span class="contact__card-glyph">✉</span>
+          </div>
+          <h3 class="contact__card-title">E-mail</h3>
+          <p class="contact__card-handle"><!-- ВСТАВИТЬ EMAIL --></p>
+          <p class="contact__card-desc">Для официальных запросов, юридических и B2B вопросов.</p>
+          <span class="contact__card-cta">Написать →</span>
+        </a>
+
+        <a href="https://t.me/<!-- ВСТАВИТЬ КАНАЛ -->" class="contact__card">
+          <div class="contact__card-head">
+            <span class="contact__card-glyph">◉</span>
+          </div>
+          <h3 class="contact__card-title">Канал</h3>
+          <p class="contact__card-handle">@<!-- ВСТАВИТЬ КАНАЛ --></p>
+          <p class="contact__card-desc">Новости, обновления прошивок, статусы серверных нод.</p>
+          <span class="contact__card-cta">Подписаться →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq">
+    <div class="faq__inner">
+      <div class="faq__head">
+        <p class="faq__eyebrow">FAQ</p>
+        <h2 class="faq__title">Частые вопросы</h2>
+        <p class="faq__lead">Не нашёл ответ — пиши напрямую, разберёмся.</p>
+      </div>
+
+      <ul class="faq__list">
+
+        <li class="faq__item">
+          <button class="faq__question" data-faq-btn aria-expanded="false">
+            <span>Это законно использовать?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" data-faq-answer>
+            <p>Использование VPN и средств шифрования трафика не запрещено для частных лиц. Роутер не является средством совершения преступлений — это инструмент защиты приватности домашней сети.</p>
+          </div>
+        </li>
+
+        <li class="faq__item">
+          <button class="faq__question" data-faq-btn aria-expanded="false">
+            <span>Нужно ли платить за серверы отдельно?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" data-faq-answer>
+            <p>Нет. Стоимость серверной инфраструктуры включена в цену устройства бессрочно. Никакой ежемесячной подписки — купил один раз и пользуешься.</p>
+          </div>
+        </li>
+
+        <li class="faq__item">
+          <button class="faq__question" data-faq-btn aria-expanded="false">
+            <span>Что будет, если провайдер заблокирует протокол?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" data-faq-answer>
+            <p>Прошивка держит в резерве четыре протокола одновременно: VLESS+Reality, Hysteria2, WireGuard и Trojan. Если один канал деградирует — подкоп автоматически переключается на следующий без перезагрузки и без твоего участия.</p>
+          </div>
+        </li>
+
+        <li class="faq__item">
+          <button class="faq__question" data-faq-btn aria-expanded="false">
+            <span>Роутер работает с любым провайдером?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" data-faq-answer>
+            <p>Да, с любым провайдером, который даёт стандартное подключение (PPPoE, DHCP, статический IP). Перед отправкой мы уточняем тип подключения и настраиваем роутер под твой конкретный провайдер.</p>
+          </div>
+        </li>
+
+        <li class="faq__item">
+          <button class="faq__question" data-faq-btn aria-expanded="false">
+            <span>Можно ли получить роутер с самовывозом?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" data-faq-answer>
+            <p>Уточняй в Telegram — зависит от города. Доставка осуществляется по всей России транспортными компаниями и Почтой России.</p>
+          </div>
+        </li>
+
+        <li class="faq__item">
+          <button class="faq__question" data-faq-btn aria-expanded="false">
+            <span>Как происходит настройка после получения?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" data-faq-answer>
+            <p>Роутер приходит уже настроенным под твой провайдер. Подключаешь кабель от провайдера в WAN, питание в розетку — всё. Если что-то пойдёт не так, поможем удалённо через Telegram.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="cta-final">
+    <div class="cta-final__inner">
+      <h2 class="cta-final__title">Остались вопросы?</h2>
+      <p class="cta-final__text">Напиши нам в Telegram — ответим быстро и по делу, без скриптов и шаблонных ответов.</p>
+      <div class="cta-final__actions">
+        <a href="https://t.me/<!-- ВСТАВИТЬ USERNAME -->" class="hero__btn hero__btn--primary">Написать в Telegram</a>
+        <a href="products.html" class="hero__btn hero__btn--secondary">Смотреть товары</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo">
+        <span class="header__logo-mark">⌁</span>
+        <span class="header__logo-text">Aegis</span>
+      </a>
+
+      <nav class="footer__nav">
+        <a href="index.html" class="footer__nav-link">Главная</a>
+        <a href="products.html" class="footer__nav-link">Товары</a>
+        <a href="about.html" class="footer__nav-link">О нас</a>
+        <a href="contacts.html" class="footer__nav-link">Контакты</a>
+      </nav>
+
+      <div class="footer__contacts">
+        <a href="mailto:hello@core-aegis.online" class="footer__contact-link">hello@core-aegis.online</a>
+        <a href="#" class="footer__contact-link">Telegram</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Aegis. Все права защищены.</p>
+      <p class="footer__legal">Оборудование предназначено для защиты приватности домашней сети.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/contacts.js"></script>
+</body>
+</html>

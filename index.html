@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aegis — роутер для свободного интернета</title>
+<meta name="description" content="Роутер с предустановленным обходом блокировок: zapret, VLESS+Reality, Hysteria2, Trojan, WireGuard. Подключи и забудь о VPN-приложениях.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" data-header>
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <span class="header__logo-mark">⌁</span>
+      <span class="header__logo-text">Aegis</span>
+    </a>
+
+    <nav class="header__nav" data-nav>
+      <a href="index.html" class="header__nav-link header__nav-link--active">Главная</a>
+      <a href="products.html" class="header__nav-link">Товары</a>
+      <a href="about.html" class="header__nav-link">О нас</a>
+      <a href="contacts.html" class="header__nav-link">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="products.html" class="header__cta">Заказать роутер</a>
+      <button class="header__burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="header__mobile" data-mobile-nav>
+    <a href="index.html" class="header__mobile-link">Главная</a>
+    <a href="products.html" class="header__mobile-link">Товары</a>
+    <a href="about.html" class="header__mobile-link">О нас</a>
+    <a href="contacts.html" class="header__mobile-link">Контакты</a>
+    <a href="products.html" class="header__mobile-cta">Заказать роутер</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="hero__grid" viewBox="0 0 1200 800" preserveAspectRatio="none">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="800" fill="url(#grid)"/>
+        <path class="hero__pulse-line hero__pulse-line--1" d="M -50 620 L 250 620 L 320 540 L 700 540 L 760 460 L 1250 460" />
+        <path class="hero__pulse-line hero__pulse-line--2" d="M -50 180 L 380 180 L 440 260 L 820 260 L 880 340 L 1250 340" />
+      </svg>
+    </div>
+
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow"><span class="hero__eyebrow-dot" data-status-dot></span>STATUS: ТУННЕЛЬ АКТИВЕН</p>
+
+        <h1 class="hero__title" data-glitch-title>
+          <span class="hero__title-line">ИНТЕРНЕТ</span>
+          <span class="hero__title-line">БЕЗ ГРАНИЦ.</span>
+          <span class="hero__title-line hero__title-line--accent">ДОМА.</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Роутер с предустановленным обходом блокировок. Прошивка сама поднимает туннели через zapret,
+          VLESS+Reality, Hysteria2 и Trojan, пока ты просто пользуешься интернетом.
+        </p>
+
+        <div class="hero__actions">
+          <a href="products.html" class="hero__btn hero__btn--primary">
+            <span>Заказать устройство</span>
+          </a>
+          <a href="#process" class="hero__btn hero__btn--secondary">
+            <span>Как это работает</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__terminal" data-terminal>
+        <div class="hero__terminal-bar">
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-title">router/var/log/laz</span>
+        </div>
+        <div class="hero__terminal-body" data-terminal-body></div>
+      </div>
+    </div>
+
+    <a href="#problem" class="hero__scroll-cue" aria-label="Прокрутить вниз">
+      <span class="hero__scroll-cue-line"></span>
+    </a>
+  </section>
+
+  <!-- ===================== PROBLEM ===================== -->
+  <section class="problem" id="problem">
+    <div class="problem__inner">
+      <div class="problem__col problem__col--lead">
+        <p class="problem__eyebrow">ПРОБЛЕМА</p>
+        <h2 class="problem__title">Свободный интернет требует слишком много усилий</h2>
+      </div>
+
+      <div class="problem__col problem__col--body">
+        <p class="problem__text">
+          Провайдер режет скорость на видео и звонках. Нужное приложение однажды просто перестаёт открываться.
+          VPN на телефоне отваливается сам, обычно в самый неудачный момент, а настраивать его на телевизоре,
+          консоли или умной колонке вообще не вариант.
+        </p>
+        <ul class="problem__list">
+          <li class="problem__list-item">Одно приложение VPN на одно устройство, и так на каждое</li>
+          <li class="problem__list-item">Бесплатные сервисы режут скорость и продают трафик</li>
+          <li class="problem__list-item">Протоколы вчерашнего дня вычисляются и блокируются за недели</li>
+        </ul>
+        <p class="problem__resolve">Решение проще: вынести обход блокировок на уровень роутера, один раз.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STACK / PROTOCOLS ===================== -->
+  <section class="stack">
+    <div class="stack__inner">
+      <div class="stack__head">
+        <p class="stack__eyebrow">ПОД КАПОТОМ</p>
+        <h2 class="stack__title">Технологии, которые работают одновременно, а не по очереди</h2>
+        <p class="stack__lead">
+          Это не один протокол на удачу. Роутер сам выбирает рабочий маршрут и переключается между ними
+          без перезагрузки и без участия пользователя.
+        </p>
+      </div>
+
+      <div class="stack__grid" data-stack-grid>
+        <article class="stack__card">
+          <span class="stack__card-index">zapret</span>
+          <h3 class="stack__card-name">Zapret v1 / v2</h3>
+          <p class="stack__card-desc">Обходит DPI-анализ на уровне пакетов прямо на границе сети, ещё до того, как трафик уходит в туннель.</p>
+          <span class="stack__card-tag">DPI BYPASS</span>
+        </article>
+
+        <article class="stack__card">
+          <span class="stack__card-index">tgws</span>
+          <h3 class="stack__card-name">tgwsproxy</h3>
+          <p class="stack__card-desc">Маскирует служебный трафик и мессенджеры под обычные веб-запросы, чтобы их не вычислили по сигнатуре.</p>
+          <span class="stack__card-tag">TRAFFIC MASKING</span>
+        </article>
+
+        <article class="stack__card">
+          <span class="stack__card-index">core</span>
+          <h3 class="stack__card-name">Подкоп</h3>
+          <p class="stack__card-desc">Управляет всеми туннелями сразу: проверяет каналы, переключает протокол при деградации, ведёт журнал без записи трафика.</p>
+          <span class="stack__card-tag">AUTOPILOT</span>
+        </article>
+
+        <article class="stack__card">
+          <span class="stack__card-index">wg</span>
+          <h3 class="stack__card-name">WireGuard</h3>
+          <p class="stack__card-desc">Лёгкий и быстрый протокол для стабильных сетей, минимальная задержка для звонков и игр.</p>
+          <span class="stack__card-tag">LOW LATENCY</span>
+        </article>
+
+        <article class="stack__card">
+          <span class="stack__card-index">vless</span>
+          <h3 class="stack__card-name">VLESS + Reality</h3>
+          <p class="stack__card-desc">Маскирует туннель под рукопожатие настоящего TLS-сайта, выглядит как обычный визит в браузере.</p>
+          <span class="stack__card-tag">TLS DISGUISE</span>
+        </article>
+
+        <article class="stack__card">
+          <span class="stack__card-index">hy2</span>
+          <h3 class="stack__card-name">Hysteria2</h3>
+          <p class="stack__card-desc">Держит соединение на нестабильных и перегруженных сетях, где другие протоколы начинают резать скорость.</p>
+          <span class="stack__card-tag">CONGESTION CONTROL</span>
+        </article>
+
+        <article class="stack__card">
+          <span class="stack__card-index">trojan</span>
+          <h3 class="stack__card-name">Trojan</h3>
+          <p class="stack__card-desc">Запасной маршрут, неотличимый от обычного HTTPS, поднимается автоматически, если другие каналы под наблюдением.</p>
+          <span class="stack__card-tag">FALLBACK</span>
+        </article>
+
+        <article class="stack__card stack__card--cta">
+          <h3 class="stack__card-name">И это уже настроено</h3>
+          <p class="stack__card-desc">Тебе остаётся включить роутер в розетку. Всё остальное прошивка сделала до того, как коробка попала к тебе.</p>
+          <a href="products.html" class="stack__card-link">Смотреть устройства →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="process" id="process">
+    <div class="process__inner">
+      <div class="process__head">
+        <p class="process__eyebrow">КАК ЭТО РАБОТАЕТ</p>
+        <h2 class="process__title">От коробки до свободного интернета: четыре шага</h2>
+      </div>
+
+      <ol class="process__list">
+        <li class="process__item">
+          <span class="process__item-index">01</span>
+          <h3 class="process__item-title">Подключаешь роутер</h3>
+          <p class="process__item-text">К нему как обычно: кабель от провайдера в WAN, питание в розетку.</p>
+        </li>
+        <li class="process__item">
+          <span class="process__item-index">02</span>
+          <h3 class="process__item-title">Раздаёшь Wi-Fi как раньше</h3>
+          <p class="process__item-text">Все устройства дома подключаются к роутеру, без отдельных приложений на каждом.</p>
+        </li>
+        <li class="process__item">
+          <span class="process__item-index">03</span>
+          <h3 class="process__item-title">Прошивка поднимает туннели</h3>
+          <p class="process__item-text">Zapret, Reality, Hysteria2 и Trojan стартуют сами и проверяют, какой канал сейчас рабочий.</p>
+        </li>
+        <li class="process__item">
+          <span class="process__item-index">04</span>
+          <h3 class="process__item-title">Блокировки остаются снаружи</h3>
+          <p class="process__item-text">Ты просто открываешь нужный сайт. Переключение протоколов происходит незаметно для тебя.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== TRUST ===================== -->
+  <section class="trust">
+    <div class="trust__inner">
+      <div class="trust__stat">
+        <span class="trust__stat-value" data-counter data-target="0">0</span>
+        <span class="trust__stat-label">логов трафика хранится</span>
+      </div>
+      <div class="trust__stat">
+        <span class="trust__stat-value" data-counter data-target="4">0</span>
+        <span class="trust__stat-label">протокола одновременно в резерве</span>
+      </div>
+      <div class="trust__stat">
+        <span class="trust__stat-value"><span data-counter data-target="24">0</span>/7</span>
+        <span class="trust__stat-label">мониторинг и поддержка</span>
+      </div>
+      <div class="trust__stat">
+        <span class="trust__stat-value"><span data-counter data-target="100">0</span>%</span>
+        <span class="trust__stat-label">настройка выполнена до доставки</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="cta-final">
+    <div class="cta-final__inner">
+      <h2 class="cta-final__title">Хватит подстраивать жизнь под блокировки.</h2>
+      <p class="cta-final__text">Выбери роутер под свою квартиру или офис и получи его настроенным, без танцев с конфигами.</p>
+      <div class="cta-final__actions">
+        <a href="products.html" class="hero__btn hero__btn--primary">Перейти к товарам</a>
+        <a href="contacts.html" class="hero__btn hero__btn--secondary">Задать вопрос</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo">
+        <span class="header__logo-mark">⌁</span>
+        <span class="header__logo-text">Aegis</span>
+      </a>
+
+      <nav class="footer__nav">
+        <a href="index.html" class="footer__nav-link">Главная</a>
+        <a href="products.html" class="footer__nav-link">Товары</a>
+        <a href="about.html" class="footer__nav-link">О нас</a>
+        <a href="contacts.html" class="footer__nav-link">Контакты</a>
+      </nav>
+
+      <div class="footer__contacts">
+        <a href="mailto:hello@laz.net" class="footer__contact-link">hello@laz.net</a>
+        <a href="#" class="footer__contact-link">Telegram</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Aegis. Все права защищены.</p>
+      <p class="footer__legal">Оборудование предназначено для защиты приватности домашней сети.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

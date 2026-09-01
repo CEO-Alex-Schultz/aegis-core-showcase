@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Товары — Aegis</title>
+<meta name="description" content="Роутер с предустановленной прошивкой и VPN-подписка на серверную инфраструктуру Aegis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" data-header>
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <span class="header__logo-mark">⌁</span>
+      <span class="header__logo-text">Aegis</span>
+    </a>
+
+    <nav class="header__nav" data-nav>
+      <a href="index.html" class="header__nav-link">Главная</a>
+      <a href="products.html" class="header__nav-link header__nav-link--active">Товары</a>
+      <a href="about.html" class="header__nav-link">О нас</a>
+      <a href="contacts.html" class="header__nav-link">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="contacts.html" class="header__cta">Заказать роутер</a>
+      <button class="header__burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="header__mobile" data-mobile-nav>
+    <a href="index.html" class="header__mobile-link">Главная</a>
+    <a href="products.html" class="header__mobile-link">Товары</a>
+    <a href="about.html" class="header__mobile-link">О нас</a>
+    <a href="contacts.html" class="header__mobile-link">Контакты</a>
+    <a href="contacts.html" class="header__mobile-cta">Заказать роутер</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="page-hero__bg" aria-hidden="true">
+      <svg class="page-hero__grid" viewBox="0 0 1200 520" preserveAspectRatio="none">
+        <defs>
+          <pattern id="grid-products" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="520" fill="url(#grid-products)"/>
+        <path class="page-hero__pulse page-hero__pulse--1" d="M -50 360 L 320 360 L 380 280 L 820 280 L 880 200 L 1250 200"/>
+        <path class="page-hero__pulse page-hero__pulse--2" d="M -50 150 L 350 150 L 410 230 L 780 230 L 840 310 L 1250 310"/>
+      </svg>
+    </div>
+
+    <div class="page-hero__inner">
+      <p class="page-hero__eyebrow">
+        <span class="page-hero__eyebrow-dot"></span>КАТАЛОГ
+      </p>
+      <h1 class="page-hero__title" data-page-title>
+        <span class="page-hero__title-line">ВЫБЕРИ СВОЁ</span>
+        <span class="page-hero__title-line page-hero__title-line--accent">УСТРОЙСТВО.</span>
+      </h1>
+      <p class="page-hero__sub">
+        Роутер навсегда или подписка на туннель — оба варианта работают на нашей инфраструктуре.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="products" id="products">
+    <div class="products__inner">
+
+      <div class="products__head">
+        <p class="products__eyebrow">ЧТО МЫ ПРОДАЁМ</p>
+        <h2 class="products__title">Два формата — одна инфраструктура</h2>
+        <p class="products__lead">
+          Нажми на карточку чтобы раскрыть доступные модели и тарифы.
+        </p>
+      </div>
+
+      <div class="products__pair">
+
+        <!-- =================== ROUTER CARD =================== -->
+        <div class="products__slot">
+          <button class="pcard" data-pcard="router" aria-expanded="false">
+
+            <!-- background decoration -->
+            <div class="pcard__deco" aria-hidden="true">
+              <svg class="pcard__deco-svg pcard__deco-svg--router" viewBox="0 0 320 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- grid -->
+                <line x1="0"   y1="60"  x2="320" y2="60"  stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                <line x1="0"   y1="120" x2="320" y2="120" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                <line x1="0"   y1="180" x2="320" y2="180" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                <line x1="0"   y1="240" x2="320" y2="240" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                <line x1="60"  y1="0"   x2="60"  y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                <line x1="120" y1="0"   x2="120" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                <line x1="180" y1="0"   x2="180" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                <line x1="240" y1="0"   x2="240" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                <!-- chip -->
+                <rect x="100" y="100" width="120" height="100" stroke="currentColor" stroke-width="1" opacity="0.35" rx="2"/>
+                <rect x="114" y="114" width="92"  height="72"  stroke="currentColor" stroke-width="0.5" opacity="0.2" rx="1"/>
+                <!-- chip pins H -->
+                <line x1="100" y1="116" x2="60"  y2="116" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="100" y1="136" x2="60"  y2="136" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="100" y1="156" x2="60"  y2="156" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="100" y1="176" x2="60"  y2="176" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="220" y1="116" x2="260" y2="116" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="220" y1="136" x2="260" y2="136" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="220" y1="156" x2="260" y2="156" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="220" y1="176" x2="260" y2="176" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <!-- chip pins V -->
+                <line x1="130" y1="100" x2="130" y2="60"  stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="160" y1="100" x2="160" y2="60"  stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="190" y1="100" x2="190" y2="60"  stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="130" y1="200" x2="130" y2="240" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="160" y1="200" x2="160" y2="240" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <line x1="190" y1="200" x2="190" y2="240" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+                <!-- grid nodes -->
+                <circle cx="60"  cy="60"  r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="120" cy="60"  r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="180" cy="60"  r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="240" cy="60"  r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="60"  cy="120" r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="60"  cy="180" r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="240" cy="120" r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="240" cy="180" r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="60"  cy="240" r="3" fill="currentColor" opacity="0.35"/>
+                <circle cx="240" cy="240" r="3" fill="currentColor" opacity="0.35"/>
+                <!-- scan line (animated via JS) -->
+                <line class="pcard__scan-line" x1="0" y1="20" x2="320" y2="20" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+              </svg>
+            </div>
+
+            <div class="pcard__body">
+              <span class="pcard__tag">ЖЕЛЕЗО / ФИЗИЧЕСКОЕ УСТРОЙСТВО</span>
+
+              <div class="pcard__icon-wrap">
+                <span class="pcard__icon">⊡</span>
+              </div>
+
+              <h2 class="pcard__name">Роутер Aegis</h2>
+
+              <p class="pcard__desc">
+                Физическое устройство на OpenWrt с предустановленной прошивкой. Подключаешь — работает.
+                Никакой ежемесячной платы, никаких конфигов.
+              </p>
+
+              <ul class="pcard__features">
+                <li class="pcard__features-item">zapret v1/v2 + tgwsproxy из коробки</li>
+                <li class="pcard__features-item">4 протокола в резерве одновременно</li>
+                <li class="pcard__features-item">инфраструктура включена бессрочно</li>
+                <li class="pcard__features-item">настройка под твоего провайдера</li>
+              </ul>
+
+              <div class="pcard__bottom">
+                <div class="pcard__price">
+                  <!-- ОБНОВИТЬ ЦЕНУ -->
+                  <span class="pcard__price-label">от</span>
+                  <span class="pcard__price-value">3 500 ₽</span>
+                </div>
+                <span class="pcard__trigger">
+                  <span class="pcard__trigger-text">Выбрать модель</span>
+                  <span class="pcard__trigger-arrow">↓</span>
+                </span>
+              </div>
+            </div>
+
+          </button>
+
+          <!-- router drawer -->
+          <div class="pdrawer pdrawer--cyan" data-pdrawer="router">
+            <div class="pdrawer__inner">
+              <p class="pdrawer__label">// ВЫБОР МОДЕЛИ</p>
+              <div class="pdrawer__grid">
+
+                <article class="pmodel">
+                  <div class="pmodel__head">
+                    <h3 class="pmodel__name">Aegis Mini</h3>
+                    <span class="pmodel__badge">Старт</span>
+                  </div>
+                  <p class="pmodel__chip"><!-- МОДЕЛЬ РОУТЕРА --></p>
+                  <ul class="pmodel__specs">
+                    <li>Wi-Fi 6, 2×2 MIMO</li>
+                    <li>до 300 Мбит/с туннель</li>
+                    <li>квартира до 60 м²</li>
+                  </ul>
+                  <div class="pmodel__foot">
+                    <!-- ОБНОВИТЬ ЦЕНУ -->
+                    <span class="pmodel__price">3 500 ₽</span>
+                    <a href="contacts.html" class="pmodel__btn pmodel__btn--cyan">Заказать</a>
+                  </div>
+                </article>
+
+                <article class="pmodel pmodel--featured">
+                  <div class="pmodel__head">
+                    <h3 class="pmodel__name">Aegis Pro</h3>
+                    <span class="pmodel__badge pmodel__badge--hot">Хит</span>
+                  </div>
+                  <p class="pmodel__chip"><!-- МОДЕЛЬ РОУТЕРА --></p>
+                  <ul class="pmodel__specs">
+                    <li>Wi-Fi 6, 4×4 MIMO</li>
+                    <li>до 600 Мбит/с туннель</li>
+                    <li>квартира / дом до 120 м²</li>
+                  </ul>
+                  <div class="pmodel__foot">
+                    <!-- ОБНОВИТЬ ЦЕНУ -->
+                    <span class="pmodel__price">4 500 ₽</span>
+                    <a href="contacts.html" class="pmodel__btn pmodel__btn--cyan">Заказать</a>
+                  </div>
+                </article>
+
+                <article class="pmodel">
+                  <div class="pmodel__head">
+                    <h3 class="pmodel__name">Aegis Max</h3>
+                    <span class="pmodel__badge">Офис</span>
+                  </div>
+                  <p class="pmodel__chip"><!-- МОДЕЛЬ РОУТЕРА --></p>
+                  <ul class="pmodel__specs">
+                    <li>Wi-Fi 6E, 4×4 MIMO</li>
+                    <li>до 1 Гбит/с туннель</li>
+                    <li>офис / большой дом</li>
+                  </ul>
+                  <div class="pmodel__foot">
+                    <!-- ОБНОВИТЬ ЦЕНУ -->
+                    <span class="pmodel__price">7 000 ₽</span>
+                    <a href="contacts.html" class="pmodel__btn pmodel__btn--cyan">Заказать</a>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================== VPN CARD =================== -->
+        <div class="products__slot">
+          <button class="pcard pcard--magenta" data-pcard="vpn" aria-expanded="false">
+
+            <!-- background decoration -->
+            <div class="pcard__deco" aria-hidden="true">
+              <svg class="pcard__deco-svg pcard__deco-svg--vpn" viewBox="0 0 320 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- signal rings from right -->
+                <circle cx="300" cy="150" r="35"  stroke="currentColor" stroke-width="0.5" opacity="0.35"/>
+                <circle cx="300" cy="150" r="75"  stroke="currentColor" stroke-width="0.5" opacity="0.28"/>
+                <circle cx="300" cy="150" r="115" stroke="currentColor" stroke-width="0.5" opacity="0.22"/>
+                <circle cx="300" cy="150" r="155" stroke="currentColor" stroke-width="0.5" opacity="0.16"/>
+                <circle cx="300" cy="150" r="195" stroke="currentColor" stroke-width="0.5" opacity="0.11"/>
+                <circle cx="300" cy="150" r="235" stroke="currentColor" stroke-width="0.5" opacity="0.07"/>
+                <!-- signal origin dot -->
+                <circle cx="300" cy="150" r="5"  fill="currentColor" opacity="0.5"/>
+                <circle cx="300" cy="150" r="11" fill="currentColor" opacity="0.15"/>
+                <circle cx="300" cy="150" r="18" fill="currentColor" opacity="0.07"/>
+                <!-- diagonal stream lines -->
+                <line x1="0"   y1="0"   x2="285" y2="144" stroke="currentColor" stroke-width="0.5" opacity="0.18"/>
+                <line x1="0"   y1="80"  x2="285" y2="147" stroke="currentColor" stroke-width="0.5" opacity="0.18"/>
+                <line x1="0"   y1="160" x2="285" y2="150" stroke="currentColor" stroke-width="0.5" opacity="0.18"/>
+                <line x1="0"   y1="240" x2="285" y2="153" stroke="currentColor" stroke-width="0.5" opacity="0.18"/>
+                <line x1="0"   y1="300" x2="285" y2="156" stroke="currentColor" stroke-width="0.5" opacity="0.18"/>
+                <!-- moving pulse dot (animated via JS) -->
+                <circle class="pcard__vpn-dot" cx="0" cy="150" r="3" fill="currentColor" opacity="0.8"/>
+              </svg>
+            </div>
+
+            <div class="pcard__body">
+              <span class="pcard__tag pcard__tag--magenta">ПОДПИСКА / VPN ТУННЕЛЬ</span>
+
+              <div class="pcard__icon-wrap">
+                <span class="pcard__icon pcard__icon--magenta">⊛</span>
+              </div>
+
+              <h2 class="pcard__name">Подписка Aegis</h2>
+
+              <p class="pcard__desc">
+                Доступ к серверной инфраструктуре для своего устройства или роутера. VLESS+Reality,
+                Hysteria2, WireGuard и Trojan — всё включено.
+              </p>
+
+              <ul class="pcard__features pcard__features--magenta">
+                <li class="pcard__features-item">подходит для любого устройства</li>
+                <li class="pcard__features-item">до 5 одновременных подключений</li>
+                <li class="pcard__features-item">все 4 протокола без ограничений</li>
+                <li class="pcard__features-item">безлимитный трафик</li>
+              </ul>
+
+              <div class="pcard__bottom">
+                <div class="pcard__price">
+                  <!-- ОБНОВИТЬ ЦЕНУ -->
+                  <span class="pcard__price-label">от</span>
+                  <span class="pcard__price-value pcard__price-value--magenta">149 ₽/мес</span>
+                </div>
+                <span class="pcard__trigger">
+                  <span class="pcard__trigger-text">Выбрать тариф</span>
+                  <span class="pcard__trigger-arrow">↓</span>
+                </span>
+              </div>
+            </div>
+
+          </button>
+
+          <!-- vpn drawer -->
+          <div class="pdrawer pdrawer--magenta" data-pdrawer="vpn">
+            <div class="pdrawer__inner">
+              <p class="pdrawer__label">// ВЫБОР ТАРИФА</p>
+              <div class="pdrawer__grid pdrawer__grid--sub">
+
+                <article class="psub">
+                  <span class="psub__period">1 месяц</span>
+                  <div class="psub__price-wrap">
+                    <!-- ОБНОВИТЬ ЦЕНУ -->
+                    <span class="psub__price">299 ₽</span>
+                    <span class="psub__per">/мес</span>
+                  </div>
+                  <p class="psub__total">299 ₽ итого</p>
+                  <a href="contacts.html" class="psub__btn">Выбрать</a>
+                </article>
+
+                <article class="psub psub--featured">
+                  <span class="psub__save">−17%</span>
+                  <span class="psub__period">3 месяца</span>
+                  <div class="psub__price-wrap">
+                    <!-- ОБНОВИТЬ ЦЕНУ -->
+                    <span class="psub__price">249 ₽</span>
+                    <span class="psub__per">/мес</span>
+                  </div>
+                  <p class="psub__total">747 ₽ итого</p>
+                  <a href="contacts.html" class="psub__btn">Выбрать</a>
+                </article>
+
+                <article class="psub psub--featured">
+                  <span class="psub__save">−33%</span>
+                  <span class="psub__period">6 месяцев</span>
+                  <div class="psub__price-wrap">
+                    <!-- ОБНОВИТЬ ЦЕНУ -->
+                    <span class="psub__price">199 ₽</span>
+                    <span class="psub__per">/мес</span>
+                  </div>
+                  <p class="psub__total">1 194 ₽ итого</p>
+                  <a href="contacts.html" class="psub__btn">Выбрать</a>
+                </article>
+
+                <article class="psub psub--best">
+                  <span class="psub__save psub__save--gold">−50%</span>
+                  <span class="psub__period">12 месяцев</span>
+                  <div class="psub__price-wrap">
+                    <!-- ОБНОВИТЬ ЦЕНУ -->
+                    <span class="psub__price">149 ₽</span>
+                    <span class="psub__per">/мес</span>
+                  </div>
+                  <p class="psub__total">1 788 ₽ итого</p>
+                  <a href="contacts.html" class="psub__btn">Выбрать</a>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INCLUDED ===================== -->
+  <section class="included">
+    <div class="included__inner">
+      <div class="included__head">
+        <p class="included__eyebrow">ВКЛЮЧЕНО В СТОИМОСТЬ</p>
+        <h2 class="included__title">Ничего лишнего, ничего скрытого</h2>
+        <p class="included__lead">
+          Цена устройства — это всё. Никаких доплат за протоколы, серверы или обновления.
+        </p>
+      </div>
+
+      <div class="included__grid">
+
+        <article class="included__item">
+          <span class="included__item-glyph">⊞</span>
+          <h3 class="included__item-title">Настройка до доставки</h3>
+          <p class="included__item-text">
+            Прошивка уже сконфигурирована под твоего провайдера. Достал из коробки — подключил.
+          </p>
+        </article>
+
+        <article class="included__item">
+          <span class="included__item-glyph">⊘</span>
+          <h3 class="included__item-title">Серверная инфраструктура</h3>
+          <p class="included__item-text">
+            Узлы VLESS+Reality, Hysteria2, WireGuard и Trojan — включены бессрочно без доп. платы.
+          </p>
+        </article>
+
+        <article class="included__item">
+          <span class="included__item-glyph">⟳</span>
+          <h3 class="included__item-title">Обновления прошивки</h3>
+          <p class="included__item-text">
+            Новые версии прошивки приходят через Telegram-чат. Устанавливаешь сам за 2 минуты.
+          </p>
+        </article>
+
+        <article class="included__item">
+          <span class="included__item-glyph">◈</span>
+          <h3 class="included__item-title">Живая поддержка</h3>
+          <p class="included__item-text">
+            Telegram-чат с командой, не с ботом. Помогаем с настройкой под любого провайдера.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DELIVERY ===================== -->
+  <section class="delivery">
+    <div class="delivery__inner">
+      <div class="delivery__head">
+        <p class="delivery__eyebrow">ДОСТАВКА И ГАРАНТИЯ</p>
+        <h2 class="delivery__title">Условия покупки</h2>
+      </div>
+
+      <div class="delivery__grid">
+
+        <div class="delivery__item">
+          <span class="delivery__item-index">01</span>
+          <h3 class="delivery__item-title">Гарантия 12 месяцев</h3>
+          <p class="delivery__item-text">
+            На всё оборудование действует гарантия производителя и наша личная. Если что-то пойдёт не так — разберёмся.
+          </p>
+        </div>
+
+        <div class="delivery__item">
+          <span class="delivery__item-index">02</span>
+          <h3 class="delivery__item-title">Доставка по всей России</h3>
+          <p class="delivery__item-text">
+            Отправляем транспортными компаниями и Почтой России. Уточняй у нас по конкретному городу.
+          </p>
+        </div>
+
+        <div class="delivery__item">
+          <span class="delivery__item-index">03</span>
+          <h3 class="delivery__item-title">Возврат в течение 14 дней</h3>
+          <p class="delivery__item-text">
+            Если устройство не подошло — возвращай в течение 14 дней в исходном состоянии. Без вопросов.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="cta-final">
+    <div class="cta-final__inner">
+      <h2 class="cta-final__title">Не нашёл подходящую конфигурацию?</h2>
+      <p class="cta-final__text">Напиши нам — подберём модель под твои задачи, провайдера и бюджет.</p>
+      <div class="cta-final__actions">
+        <a href="contacts.html" class="hero__btn hero__btn--primary">Написать в Telegram</a>
+        <a href="about.html" class="hero__btn hero__btn--secondary">О нас</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo">
+        <span class="header__logo-mark">⌁</span>
+        <span class="header__logo-text">Aegis</span>
+      </a>
+
+      <nav class="footer__nav">
+        <a href="index.html" class="footer__nav-link">Главная</a>
+        <a href="products.html" class="footer__nav-link">Товары</a>
+        <a href="about.html" class="footer__nav-link">О нас</a>
+        <a href="contacts.html" class="footer__nav-link">Контакты</a>
+      </nav>
+
+      <div class="footer__contacts">
+        <a href="mailto:hello@core-aegis.online" class="footer__contact-link">hello@core-aegis.online</a>
+        <a href="#" class="footer__contact-link">Telegram</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Aegis. Все права защищены.</p>
+      <p class="footer__legal">Оборудование предназначено для защиты приватности домашней сети.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>

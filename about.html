@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О нас — Aegis</title>
+<meta name="description" content="Кто стоит за Aegis — роутером для свободного интернета. Манифест, принципы и команда.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" data-header>
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <span class="header__logo-mark">⌁</span>
+      <span class="header__logo-text">Aegis</span>
+    </a>
+
+    <nav class="header__nav" data-nav>
+      <a href="index.html" class="header__nav-link">Главная</a>
+      <a href="products.html" class="header__nav-link">Товары</a>
+      <a href="about.html" class="header__nav-link header__nav-link--active">О нас</a>
+      <a href="contacts.html" class="header__nav-link">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="products.html" class="header__cta">Заказать роутер</a>
+      <button class="header__burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="header__mobile" data-mobile-nav>
+    <a href="index.html" class="header__mobile-link">Главная</a>
+    <a href="products.html" class="header__mobile-link">Товары</a>
+    <a href="about.html" class="header__mobile-link">О нас</a>
+    <a href="contacts.html" class="header__mobile-link">Контакты</a>
+    <a href="products.html" class="header__mobile-cta">Заказать роутер</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="page-hero__bg" aria-hidden="true">
+      <svg class="page-hero__grid" viewBox="0 0 1200 520" preserveAspectRatio="none">
+        <defs>
+          <pattern id="grid-about" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="520" fill="url(#grid-about)"/>
+        <path class="page-hero__pulse page-hero__pulse--1" d="M -50 390 L 280 390 L 340 310 L 780 310 L 840 230 L 1250 230"/>
+        <path class="page-hero__pulse page-hero__pulse--2" d="M -50 130 L 420 130 L 480 210 L 900 210 L 960 290 L 1250 290"/>
+      </svg>
+    </div>
+
+    <div class="page-hero__inner">
+      <p class="page-hero__eyebrow">
+        <span class="page-hero__eyebrow-dot"></span>О НАС
+      </p>
+      <h1 class="page-hero__title" data-page-title>
+        <span class="page-hero__title-line">МЫ СТРОИМ</span>
+        <span class="page-hero__title-line page-hero__title-line--accent">СВОБОДНЫЙ</span>
+        <span class="page-hero__title-line">ИНТЕРНЕТ.</span>
+      </h1>
+      <p class="page-hero__sub">
+        Небольшая команда, которая верит: обход блокировок не должен требовать технического образования.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== MANIFESTO ===================== -->
+  <section class="manifesto" id="manifesto">
+    <div class="manifesto__inner">
+      <div class="manifesto__col manifesto__col--lead">
+        <p class="manifesto__eyebrow">МАНИФЕСТ</p>
+        <h2 class="manifesto__title">Интернет был спроектирован открытым. Мы за этим следим.</h2>
+      </div>
+
+      <div class="manifesto__col manifesto__col--body">
+        <p class="manifesto__text">
+          Каждый день тысячи людей сталкиваются с тем, что привычные сайты внезапно перестают открываться.
+          Не из-за технической поломки — из-за решения, принятого без их участия.
+        </p>
+        <p class="manifesto__text">
+          Aegis появился как ответ на простой вопрос: почему для доступа к нормальному интернету нужно
+          разбираться в протоколах, конфигах и клиентских приложениях на каждом устройстве?
+        </p>
+        <blockquote class="manifesto__quote">
+          Мы не продаём подписки на VPN. Мы поставляем оборудование с прошивкой,
+          которая работает сама — тихо, надёжно, без абонентской платы.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALUES ===================== -->
+  <section class="values">
+    <div class="values__inner">
+      <div class="values__head">
+        <p class="values__eyebrow">ПРИНЦИПЫ</p>
+        <h2 class="values__title">Что стоит за каждым устройством</h2>
+        <p class="values__lead">
+          Четыре правила, которые мы не нарушаем — ни ради скорости разработки, ни ради маржи.
+        </p>
+      </div>
+
+      <div class="values__grid">
+        <article class="values__card">
+          <span class="values__card-glyph">⊞</span>
+          <h3 class="values__card-title">Открытый стек</h3>
+          <p class="values__card-text">
+            OpenWrt, xray-core, zapret — весь софт на открытом исходном коде. Ты можешь
+            проверить что происходит внутри в любой момент.
+          </p>
+          <span class="values__card-tag">OPEN SOURCE</span>
+        </article>
+
+        <article class="values__card">
+          <span class="values__card-glyph">⊘</span>
+          <h3 class="values__card-title">Ноль логов</h3>
+          <p class="values__card-text">
+            Мы не видим твой трафик и не храним журналы запросов. Сервер знает только
+            что туннель жив — и ничего больше.
+          </p>
+          <span class="values__card-tag">NO LOGS</span>
+        </article>
+
+        <article class="values__card">
+          <span class="values__card-glyph">∞</span>
+          <h3 class="values__card-title">Без подписки</h3>
+          <p class="values__card-text">
+            Купил роутер — пользуешься бессрочно. Никаких ежемесячных платежей,
+            никаких лимитов трафика, никаких сюрпризов.
+          </p>
+          <span class="values__card-tag">ONE-TIME</span>
+        </article>
+
+        <article class="values__card">
+          <span class="values__card-glyph">◈</span>
+          <h3 class="values__card-title">Живая поддержка</h3>
+          <p class="values__card-text">
+            Telegram-чат с реальными людьми, не ботами. Настройка под провайдера,
+            обновления прошивки, ответы на вопросы.
+          </p>
+          <span class="values__card-tag">REAL SUPPORT</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM ===================== -->
+  <section class="team">
+    <div class="team__inner">
+      <div class="team__head">
+        <p class="team__eyebrow">КОМАНДА</p>
+        <h2 class="team__title">Люди за Aegis</h2>
+        <p class="team__lead">
+          Мы небольшие — и это намеренно. Каждый в команде технически понимает то, что продаёт.
+        </p>
+      </div>
+
+      <div class="team__grid">
+        <article class="team__card">
+          <div class="team__card-avatar">
+            <span class="team__card-avatar-glyph">⌬</span>
+          </div>
+          <div class="team__card-body">
+            <h3 class="team__card-name"><!-- ИМЯ --></h3>
+            <p class="team__card-role">Основатель, инженер прошивок</p>
+            <p class="team__card-bio">
+              OpenWrt, xray-core, сетевые протоколы. Собирает и настраивает каждое
+              устройство вручную перед отправкой.
+            </p>
+          </div>
+        </article>
+
+        <article class="team__card">
+          <div class="team__card-avatar">
+            <span class="team__card-avatar-glyph">⌬</span>
+          </div>
+          <div class="team__card-body">
+            <h3 class="team__card-name"><!-- ИМЯ --></h3>
+            <p class="team__card-role">Серверная инфраструктура</p>
+            <p class="team__card-bio">
+              Поднимает и мониторит ноды VLESS+Reality, Hysteria2, Trojan.
+              Следит чтобы каналы были живыми 24/7.
+            </p>
+          </div>
+        </article>
+
+        <article class="team__card">
+          <div class="team__card-avatar">
+            <span class="team__card-avatar-glyph">⌬</span>
+          </div>
+          <div class="team__card-body">
+            <h3 class="team__card-name"><!-- ИМЯ --></h3>
+            <p class="team__card-role">Поддержка и продажи</p>
+            <p class="team__card-bio">
+              Помогает с выбором модели, настройкой под провайдера и
+              отвечает в Telegram-чате.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="cta-final">
+    <div class="cta-final__inner">
+      <h2 class="cta-final__title">Готовы перейти к делу?</h2>
+      <p class="cta-final__text">Посмотри доступные устройства или напиши нам — ответим на любой вопрос перед покупкой.</p>
+      <div class="cta-final__actions">
+        <a href="products.html" class="hero__btn hero__btn--primary">Перейти к товарам</a>
+        <a href="contacts.html" class="hero__btn hero__btn--secondary">Написать нам</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo">
+        <span class="header__logo-mark">⌁</span>
+        <span class="header__logo-text">Aegis</span>
+      </a>
+
+      <nav class="footer__nav">
+        <a href="index.html" class="footer__nav-link">Главная</a>
+        <a href="products.html" class="footer__nav-link">Товары</a>
+        <a href="about.html" class="footer__nav-link">О нас</a>
+        <a href="contacts.html" class="footer__nav-link">Контакты</a>
+      </nav>
+
+      <div class="footer__contacts">
+        <a href="mailto:hello@core-aegis.online" class="footer__contact-link">hello@core-aegis.online</a>
+        <a href="#" class="footer__contact-link">Telegram</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Aegis. Все права защищены.</p>
+      <p class="footer__legal">Оборудование предназначено для защиты приватности домашней сети.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>

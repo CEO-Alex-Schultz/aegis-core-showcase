@@ -1,0 +1,779 @@
+/* ===================================================================
+   products.css — страница товаров
+   Подключается поверх style.css и pages.css
+   =================================================================== */
+
+/* ===================================================================
+   eyebrow extension
+   =================================================================== */
+.products__eyebrow,
+.included__eyebrow,
+.delivery__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+/* ===================================================================
+   products — section wrapper
+   =================================================================== */
+.products {
+  border-top: 1px solid var(--line);
+  padding: 100px 0 120px;
+}
+
+.products__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.products__head {
+  max-width: 640px;
+  margin-bottom: 56px;
+}
+
+.products__eyebrow {
+  margin-bottom: 18px;
+}
+
+.products__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(26px, 3.4vw, 38px);
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+
+.products__lead {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.products__pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* ===================================================================
+   products__slot — wrapper that connects pcard + pdrawer
+   =================================================================== */
+.products__slot {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================================================================
+   pcard — main product card (button)
+   =================================================================== */
+.pcard {
+  position: relative;
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 230, 246, 0.22);
+  border-radius: var(--radius) var(--radius) 0 0;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition:
+    border-color  0.35s ease,
+    box-shadow    0.35s ease;
+
+  /* SVG currentColor follows this */
+  color: var(--cyan);
+}
+
+.pcard--magenta {
+  border-color: rgba(255, 45, 120, 0.22);
+  color: var(--magenta);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* hover */
+.pcard:hover {
+  border-color: var(--cyan);
+  box-shadow:
+    0 0 0 1px rgba(0, 230, 246, 0.12),
+    0 0 56px rgba(0, 230, 246, 0.1),
+    inset 0 0 48px rgba(0, 230, 246, 0.04);
+}
+
+.pcard--magenta:hover {
+  border-color: var(--magenta);
+  box-shadow:
+    0 0 0 1px rgba(255, 45, 120, 0.12),
+    0 0 56px rgba(255, 45, 120, 0.1),
+    inset 0 0 48px rgba(255, 45, 120, 0.04);
+}
+
+/* open state */
+.pcard[aria-expanded="true"] {
+  border-color: var(--cyan);
+  border-bottom-color: transparent;
+}
+
+.pcard--magenta[aria-expanded="true"] {
+  border-color: var(--magenta);
+  border-bottom-color: transparent;
+}
+
+/* hover sweep shimmer */
+.pcard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(0, 230, 246, 0.035) 50%,
+    transparent 60%
+  );
+  background-size: 300% 100%;
+  background-position: 0% 0;
+  pointer-events: none;
+  transition: background-position 0.8s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease, background-position 0.8s ease;
+}
+
+.pcard:hover::after {
+  opacity: 1;
+  background-position: 100% 0;
+}
+
+/* ===================================================================
+   pcard__deco — SVG visual area
+   =================================================================== */
+.pcard__deco {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pcard__deco-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* gradient fade at bottom of deco area */
+.pcard__deco::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--bg-card));
+  pointer-events: none;
+}
+
+/* ===================================================================
+   pcard__body — text content
+   =================================================================== */
+.pcard__body {
+  padding: 24px 30px 30px;
+  border-top: 1px solid rgba(0, 230, 246, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pcard--magenta .pcard__body {
+  border-top-color: rgba(255, 45, 120, 0.1);
+}
+
+.pcard__tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.pcard__tag--magenta {
+  color: var(--magenta);
+}
+
+.pcard__icon-wrap {
+  line-height: 1;
+}
+
+.pcard__icon {
+  font-size: 32px;
+  color: var(--cyan);
+}
+
+.pcard__icon--magenta {
+  color: var(--magenta);
+}
+
+.pcard__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(22px, 2.4vw, 28px);
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.pcard__desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.pcard__features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.pcard__features-item {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.pcard__features-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 1px;
+  background: var(--cyan);
+}
+
+.pcard__features--magenta .pcard__features-item::before {
+  background: var(--magenta);
+}
+
+.pcard__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  margin-top: 4px;
+}
+
+.pcard__price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.pcard__price-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+.pcard__price-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--cyan);
+}
+
+.pcard__price-value--magenta {
+  color: var(--magenta);
+}
+
+.pcard__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 8px 16px;
+  flex-shrink: 0;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.pcard:hover .pcard__trigger {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+
+.pcard--magenta:hover .pcard__trigger {
+  color: var(--magenta);
+  border-color: var(--magenta);
+}
+
+.pcard[aria-expanded="true"] .pcard__trigger {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+
+.pcard--magenta[aria-expanded="true"] .pcard__trigger {
+  color: var(--magenta);
+  border-color: var(--magenta);
+}
+
+.pcard__trigger-arrow {
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.pcard[aria-expanded="true"] .pcard__trigger-arrow {
+  transform: rotate(180deg);
+}
+
+/* ===================================================================
+   pdrawer — inline expanding drawer
+   =================================================================== */
+.pdrawer {
+  height: 0;
+  overflow: hidden;
+  background: var(--bg-elevated);
+  border: 1px solid rgba(0, 230, 246, 1.0);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.pdrawer--magenta {
+  border-color: rgba(255, 45, 120, 1.0);
+}
+
+.pdrawer__inner {
+  padding: 28px 30px 32px;
+}
+
+.pdrawer__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+}
+
+.pdrawer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.pdrawer__grid--sub {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ===================================================================
+   pmodel — router model card inside drawer
+   =================================================================== */
+.pmodel {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.25s ease;
+}
+
+.pmodel:hover {
+  border-color: var(--line-strong);
+}
+
+.pmodel--featured {
+  border-color: rgba(0, 230, 246, 0.4);
+  background: rgba(0, 230, 246, 0.04);
+}
+
+.pmodel--featured:hover {
+  border-color: var(--cyan);
+}
+
+.pmodel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pmodel__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.pmodel__badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.pmodel__badge--hot {
+  color: var(--cyan);
+  border-color: rgba(0, 230, 246, 0.4);
+}
+
+.pmodel__chip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+  min-height: 1.4em;
+  line-height: 1.4;
+}
+
+.pmodel__specs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  margin-top: 4px;
+}
+
+.pmodel__specs li {
+  font-size: 13px;
+  color: var(--text-muted);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.pmodel__specs li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 1px;
+  background: var(--cyan);
+}
+
+.pmodel__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  margin-top: 8px;
+}
+
+.pmodel__price {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--cyan);
+}
+
+.pmodel__btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pmodel__btn--cyan {
+  border: 1px solid rgba(0, 230, 246, 0.5);
+  color: var(--cyan);
+}
+
+.pmodel__btn--cyan:hover {
+  background: var(--cyan);
+  color: #04141a;
+}
+
+/* ===================================================================
+   psub — VPN subscription plan card inside drawer
+   =================================================================== */
+.psub {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color 0.25s ease;
+}
+
+.psub:hover {
+  border-color: var(--line-strong);
+}
+
+.psub--featured {
+  border-color: rgba(255, 45, 120, 0.4);
+  background: rgba(255, 45, 120, 0.04);
+}
+
+.psub--featured:hover {
+  border-color: var(--magenta);
+}
+
+.psub--best {
+  border-color: rgba(255, 201, 60, 0.4);
+  background: rgba(255, 201, 60, 0.04);
+}
+
+.psub--best:hover {
+  border-color: var(--amber);
+}
+
+.psub__save {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--magenta);
+  display: block;
+  min-height: 1.4em;
+  margin-bottom: 4px;
+}
+
+.psub__save--gold {
+  color: var(--amber);
+}
+
+.psub__period {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.psub__price-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.psub__price {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--text);
+}
+
+.psub--featured .psub__price { color: var(--magenta); }
+.psub--best .psub__price     { color: var(--amber); }
+
+.psub__per {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.psub__total {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+  margin-bottom: 16px;
+}
+
+.psub__btn {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: auto;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.psub:hover .psub__btn         { color: var(--text); }
+.psub--featured .psub__btn     { color: var(--magenta); border-top-color: rgba(255, 45, 120, 0.2); }
+.psub--best .psub__btn         { color: var(--amber); border-top-color: rgba(255, 201, 60, 0.2); }
+
+/* ===================================================================
+   included — what's included section
+   =================================================================== */
+.included {
+  border-top: 1px solid var(--line);
+  padding: 120px 0;
+  background: linear-gradient(180deg, transparent, var(--bg-elevated) 50%, transparent);
+}
+
+.included__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.included__head {
+  max-width: 640px;
+  margin-bottom: 56px;
+}
+
+.included__eyebrow {
+  margin-bottom: 18px;
+}
+
+.included__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(26px, 3.4vw, 38px);
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+
+.included__lead {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.included__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.included__item {
+  background: var(--bg-card);
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: background 0.25s ease;
+}
+
+.included__item:hover { background: var(--bg-card-hover); }
+
+.included__item-glyph {
+  font-size: 22px;
+  line-height: 1;
+  color: var(--cyan);
+  font-family: var(--font-mono);
+}
+
+.included__item-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.included__item-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ===================================================================
+   delivery — conditions section
+   =================================================================== */
+.delivery {
+  border-top: 1px solid var(--line);
+  padding: 120px 0;
+}
+
+.delivery__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.delivery__head {
+  max-width: 640px;
+  margin-bottom: 56px;
+}
+
+.delivery__eyebrow {
+  margin-bottom: 18px;
+}
+
+.delivery__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(26px, 3.4vw, 38px);
+  line-height: 1.18;
+}
+
+.delivery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.delivery__item {
+  padding-top: 24px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.delivery__item-index {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--cyan);
+  margin-bottom: 16px;
+}
+
+.delivery__item-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.delivery__item-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ===================================================================
+   responsive
+   =================================================================== */
+@media (max-width: 980px) {
+  .products__pair        { grid-template-columns: 1fr; }
+  .pdrawer__grid         { grid-template-columns: repeat(2, 1fr); }
+  .pdrawer__grid--sub    { grid-template-columns: repeat(2, 1fr); }
+  .included__grid        { grid-template-columns: repeat(2, 1fr); }
+  .delivery__grid        { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .pcard__bottom         { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .pcard__trigger        { align-self: stretch; justify-content: center; }
+  .pdrawer__grid         { grid-template-columns: 1fr; }
+  .pdrawer__grid--sub    { grid-template-columns: repeat(2, 1fr); }
+  .delivery__grid        { grid-template-columns: 1fr; }
+  .included__grid        { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 400px) {
+  .pdrawer__grid--sub    { grid-template-columns: 1fr; }
+}
