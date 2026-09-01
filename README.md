@@ -1,4 +1,5 @@
 <div align="center">
+<img width="1080" height="609" alt="image" src="https://github.com/user-attachments/assets/5ce278df-f728-4569-bece-8d44657b8777" />
 
   # Aegis - роутер для безопасного интернета
 
