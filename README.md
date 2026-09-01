@@ -65,7 +65,6 @@
 <img width="1496" height="924" alt="image" src="https://github.com/user-attachments/assets/22669520-721a-4370-8748-3d2d6f7983c7" />
 <img width="696" height="809" alt="image" src="https://github.com/user-attachments/assets/78d95548-898d-4e0a-9f6d-fd7efaa0bb33" />
 
-_Скоро здесь появятся скрины интерфейса._
 
 ## Контакты
 
