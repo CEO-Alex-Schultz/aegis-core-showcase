@@ -51,9 +51,6 @@
 
 - 🌍 Взяты и настроены сервера в Риге, Нидерландах и Финляндии под панелями **Remnawave** и **3x-ui**
 - 🔐 Настроены протоколы **VLESS+Reality, Hysteria2, Trojan**
-- 🚑 Разобрана цепочка проблем при миграции на новый сервер: падения DNS, переполнение диска, MySQL crash-loop
-
-
 
 ## Скриншоты
 <img width="1635" height="885" alt="image" src="https://github.com/user-attachments/assets/eb2694f1-7f05-49a0-b176-61517919403c" />
