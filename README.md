@@ -7,7 +7,7 @@
   ![Type](https://img.shields.io/badge/type-hardware%20%2B%20VPN%20service-blue)
   ![License](https://img.shields.io/badge/code-closed%20source-lightgrey)
 
-  🔗 **[Открыть сайт → Aegis](https://ceo-alex-schultz.github.io/aegis-core/index.html)**
+  🔗 **[Открыть сайт → Aegis](https://ceo-alex-schultz.github.io/aegis-core-showcase/)**
 
 </div>
 
