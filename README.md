@@ -12,6 +12,22 @@
 
 ---
 
+## Стек
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
+![OpenWrt](https://img.shields.io/badge/OpenWrt-00B5E2?logo=openwrt&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+</br>
+![VLESS+Reality](https://img.shields.io/badge/VLESS%2BReality-6C63FF)
+![Hysteria2](https://img.shields.io/badge/Hysteria2-FF6B6B)
+![Trojan](https://img.shields.io/badge/Trojan-333333)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?logo=wireguard&logoColor=white)
+![Remnawave](https://img.shields.io/badge/Remnawave-1A1A2E)
+![3x--ui](https://img.shields.io/badge/3x--ui-2E2E2E)
+
 ## О проекте
 
 **Aegis** - роутеры с предустановленной прошивкой для обхода блокировок и собственная серверная VPN-инфраструктура. Идея простая: не заставлять пользователя разбираться в протоколах, конфигах и отдельном VPN-приложении на каждом устройстве - обход санкций зашивается один раз на уровне роутера, и дальше просто работает.
@@ -36,21 +52,7 @@
 - 🔐 Настроены протоколы **VLESS+Reality, Hysteria2, Trojan**
 - 🚑 Разобрана цепочка проблем при миграции на новый сервер: падения DNS, переполнение диска, MySQL crash-loop
 
-## Стек
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
-![OpenWrt](https://img.shields.io/badge/OpenWrt-00B5E2?logo=openwrt&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
-</br>
-![VLESS+Reality](https://img.shields.io/badge/VLESS%2BReality-6C63FF)
-![Hysteria2](https://img.shields.io/badge/Hysteria2-FF6B6B)
-![Trojan](https://img.shields.io/badge/Trojan-333333)
-![WireGuard](https://img.shields.io/badge/WireGuard-88171A?logo=wireguard&logoColor=white)
-![Remnawave](https://img.shields.io/badge/Remnawave-1A1A2E)
-![3x--ui](https://img.shields.io/badge/3x--ui-2E2E2E)
 
 ## Скриншоты
 
