@@ -55,6 +55,15 @@
 
 
 ## Скриншоты
+<img width="1635" height="885" alt="image" src="https://github.com/user-attachments/assets/eb2694f1-7f05-49a0-b176-61517919403c" />
+<img width="1533" height="837" alt="image" src="https://github.com/user-attachments/assets/d5d0e8df-edd5-4791-ac6c-24e80daabc0e" />
+<img width="1529" height="939" alt="image" src="https://github.com/user-attachments/assets/46ed66f9-80a2-4843-b57c-5597218e3a74" />
+<img width="1431" height="871" alt="image" src="https://github.com/user-attachments/assets/c3c85686-266a-4b4c-bcf5-eedc4a982cdd" />
+<img width="1376" height="758" alt="image" src="https://github.com/user-attachments/assets/03cede8b-5ed9-4c6e-b415-b433df97fb93" />
+<img width="1308" height="941" alt="image" src="https://github.com/user-attachments/assets/82081339-89e7-4dd0-b794-5802ca155bac" />
+<img width="1368" height="930" alt="image" src="https://github.com/user-attachments/assets/31c6643d-9b02-448d-9c7a-9738f4157bc9" />
+<img width="1496" height="924" alt="image" src="https://github.com/user-attachments/assets/22669520-721a-4370-8748-3d2d6f7983c7" />
+<img width="696" height="809" alt="image" src="https://github.com/user-attachments/assets/78d95548-898d-4e0a-9f6d-fd7efaa0bb33" />
 
 _Скоро здесь появятся скрины интерфейса._
 
